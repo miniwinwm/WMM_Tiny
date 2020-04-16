@@ -1,6 +1,6 @@
 # WMM_Tiny
 
-This is a small implementation of the World Magnetic Model published by NOAA for calculating the magnetic field at any point on or above the world's surface for a given date. This implementation uses the lates coefficients from NOAA for the years 2020 to 2025.
+This is a small implementation of the World Magnetic Model published by NOAA for calculating the magnetic field at any point on the world's surface for a given date. This implementation uses the lates coefficients from NOAA for the years 2020 to 2025.
 
 This implementation is a cut down version of the source code supplied by NOAA and is intended for small embedded systems. The limitations are:
 
