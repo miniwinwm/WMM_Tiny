@@ -8,7 +8,7 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 - Only calculates the magnetic variation at the ellipsoid which is approximately the Earth's surface
 
-- Uses floats in its calculations, not doubles. This will redice accuracy very slightly.
+- Uses floats in its calculations, not doubles. This will reduce accuracy very slightly.
 
 - Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point integers and then stored as variable length integers.
 
