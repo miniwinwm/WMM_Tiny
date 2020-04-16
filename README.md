@@ -18,6 +18,8 @@ This example project is for the STM32F103C8 processor and a project is supplied 
 
 This code requires 4.2 kBytes of RAM permanently. All memory is statically allocated.
 
+The source code may look a bit strange to a seasoned C programmer with gotos in the code. This is because this is a port of the WMM souce code provided by NOAA which is itself a port of the original WMM code written in Fortran.
+
 Under folder wmm_cof_converter is a sub-project that compresses the coefficients file supplied by NOAA (WMM.COF) to a C99 source file that is used by the WMM_Tiny project. This sub-project also has project files allowing it to be loaded and built in STM32CubeIDE or the single C99 source file wmm_cof_converter.c can be compiled by any C99 compiler.
 
 
