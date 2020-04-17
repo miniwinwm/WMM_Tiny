@@ -30,6 +30,9 @@ The source code may look a bit strange to a seasoned C programmer with gotos in 
 
 Under folder wmm_cof_converter is a sub-project that compresses the coefficients file supplied by NOAA (WMM.COF) to a C99 source file that is used by the WMM_Tiny project (WMM_COF.c). Included is the version of WMM.COF current at the time of writing but you should check on NOAA's website for a later updated version and regenerate WMM_COF.c if a later version is available. This sub-project also has project files allowing it to be loaded and built in STM32CubeIDE or the single C99 source file wmm_cof_converter.c can be compiled by any C99 compiler.
 
+The original code was developed by NOAA / NCEI.
+
+https://www.ngdc.noaa.gov/geomag/WMM/
 
 
 
