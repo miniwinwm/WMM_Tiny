@@ -6,7 +6,7 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 - Calculates magnetic variation only
 
-- Only calculates the magnetic variation at altitude xero relative to the WGS84 ellipsoid, which is approximately the Earth's surface
+- Only calculates the magnetic variation at altitude zero relative to the WGS84 ellipsoid, which is approximately the Earth's surface
 
 - Uses floats in its calculations, not doubles. This will reduce accuracy very slightly.
 
