@@ -14,7 +14,13 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for embedded processors short on code memory but with ample RAM. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
 
-This example project is for the STM32F103C8 processor and a project is supplied for the STM32CubeIDE. However, the WMM part of the code is written in standard C99 and can be ported to other processors easily.
+This example project is for the STM32F103C8 processor and a project is supplied for the STM32CubeIDE. However, the WMM part of the code is written in standard C99 and can be ported to other processors easily. The files necessary for porting are these:
+
+Core/Inc/wmm.h
+Core/Src/wmm.c
+Core/Src/WMM_COF.c
+
+Doxygen style documentation of the API is found in wmm.h. Example code calling the API is found in Core/Src/main.c.
 
 This code requires 4.2 kBytes of RAM permanently. All memory is statically allocated.
 
