@@ -12,7 +12,7 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 - Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point integers and then stored as variable length signed integers.
 
-The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for small embedded processors short on code memory but with ample RAM. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
+The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for small embedded processors short on code memory but with 4.2 kBytes of RAM available. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
 
 This example project is for the STM32F103C8 processor and a project is supplied for the STM32CubeIDE. However, the WMM part of the code is written in standard C99 and can be ported to other processors easily. The files necessary for porting are these:
 
