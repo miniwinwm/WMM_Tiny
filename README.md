@@ -10,9 +10,9 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 - Uses floats in its calculations, not doubles. This will reduce accuracy very slightly.
 
-- Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point integers and then stored as variable length integers.
+- Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point integers and then stored as variable length signed integers.
 
-The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for embedded processors short on code memory but with ample RAM. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
+The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for small embedded processors short on code memory but with ample RAM. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
 
 This example project is for the STM32F103C8 processor and a project is supplied for the STM32CubeIDE. However, the WMM part of the code is written in standard C99 and can be ported to other processors easily. The files necessary for porting are these:
 
@@ -26,7 +26,7 @@ This code requires 4.2 kBytes of RAM permanently. All memory is statically alloc
 
 The source code may look a bit strange to a seasoned C programmer with gotos in the code. This is because this is a port of the WMM souce code provided by NOAA which is itself a port of the original WMM code written in Fortran.
 
-Under folder wmm_cof_converter is a sub-project that compresses the coefficients file supplied by NOAA (WMM.COF) to a C99 source file that is used by the WMM_Tiny project. This sub-project also has project files allowing it to be loaded and built in STM32CubeIDE or the single C99 source file wmm_cof_converter.c can be compiled by any C99 compiler.
+Under folder wmm_cof_converter is a sub-project that compresses the coefficients file supplied by NOAA (WMM.COF) to a C99 source file that is used by the WMM_Tiny project (WMM_COF.c). Included is the version of WMM.COF current at the time of writing but you should check on NOAA's website for a later updated version and regenerate WMM_COF.c if a later version is available. This sub-project also has project files allowing it to be loaded and built in STM32CubeIDE or the single C99 source file wmm_cof_converter.c can be compiled by any C99 compiler.
 
 
 
