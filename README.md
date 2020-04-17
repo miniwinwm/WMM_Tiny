@@ -17,7 +17,9 @@ The intention of this project is to reduce the code space as much as possible at
 This example project is for the STM32F103C8 processor and a project is supplied for the STM32CubeIDE. However, the WMM part of the code is written in standard C99 and can be ported to other processors easily. The files necessary for porting are these:
 
 Core/Inc/wmm.h
+
 Core/Src/wmm.c
+
 Core/Src/WMM_COF.c
 
 Doxygen style documentation of the API is found in wmm.h. Example code calling the API is found in Core/Src/main.c.
