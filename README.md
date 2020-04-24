@@ -10,7 +10,7 @@ This implementation is a cut down version of the source code supplied by NOAA an
 
 - Uses floats in its calculations, not doubles. This will reduce accuracy very slightly.
 
-- Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point integers and then stored as variable length signed integers.
+- Stores the coefficients in a compressed format. The floating point coefficients are converted to fixed point floats and then stored as scaled variable length signed integers.
 
 The intention of this project is to reduce the code space as much as possible at the expense of RAM. This makes it suitable for small embedded processors short on code memory but with 4.2 kBytes of RAM available. The coefficients are compressed in code but are expanded back into their normal format in RAM when the code runs.
 
