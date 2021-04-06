@@ -31,7 +31,14 @@ static float convert_varint_to_float(char **bytes);
 
 float wmm_get_date(uint8_t year, uint8_t month, uint8_t date)
 {
-	return (float)year + 2000.0f + (float)(month - 1U) / 12.0f + (float)(date - 1U) / (365.0f);
+	float days_in_year = 365.0f;
+
+	if (year % 4U == 0U)
+	{
+		days_in_year = 366.0f;
+	}
+
+	return (float)year + 2000.0f + (float)(month - 1U) / 12.0f + (float)(date - 1U) / (days_in_year);
 }
 
 static float convert_varint_to_float(char **bytes)
