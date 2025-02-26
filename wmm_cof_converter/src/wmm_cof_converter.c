@@ -21,7 +21,7 @@ int main(void)
 
 	puts("WMM Coefficients file converter\n");
 
-	FILE *in = fopen("WMM.cof", "r");
+	FILE *in = fopen("WMM.COF", "r");
 	if (in == NULL)
 	{
 		printf("Cannot open coefficients input file WMM.cof\n");
@@ -36,9 +36,9 @@ int main(void)
 	}
 
 	fgets(line, READ_LINE_LEN, in);
-	if (strcmp(strtok(line, " "), "2020.0") != 0)
+	if (strcmp(strtok(line, " "), "2025.0") != 0)
 	{
-		printf("Not a 2020 coefficients file\n");
+		printf("Not a 2025 coefficients file\n");
 		return EXIT_FAILURE;
 	}
 

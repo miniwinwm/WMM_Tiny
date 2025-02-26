@@ -1,6 +1,6 @@
 # WMM_Tiny
 
-This is a small embedded C99 implementation of the World Magnetic Model published by NOAA for calculating the magnetic field at any point on the world's surface for a given date in the years 2020 to 2025. This implementation uses the latest coefficients from NOAA for the years 2020 to 2025.
+This is a small embedded C99 implementation of the World Magnetic Model published by NOAA for calculating the magnetic field at any point on the world's surface for a given date in the years 2025 to 2030. This implementation uses the latest coefficients from NOAA for the years 2025 to 2030.
 
 This implementation is a cut down version of the source code supplied by NOAA and is intended for small embedded systems. The limitations are:
 
