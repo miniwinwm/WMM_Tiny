@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define WMM_EPOCH		2020.0f
+#define WMM_EPOCH		2025.0f
 
 typedef struct
 {
